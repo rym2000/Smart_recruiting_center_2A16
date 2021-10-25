@@ -1,0 +1,26 @@
+ #include "candidat.h"
+#include <QSqlQuery>
+#include <QtDebug>
+ 
+
+
+Candidat::Candidat()
+{
+    CIN =0;num=0; nom=" ";prenom=" ";adresse=" ";diplome=" ";
+}
+Candidat::Candidat(int CIN,int num,QString nom,QString prenom,QString adresse,QString diplome)
+{this->CIN=CIN;this->num=num;this->nom=nom;this->prenom=prenom;this->adresse=adresse;this->diplome=diplome ; }
+int Candidat::getCIN(){return CIN;}
+int Candidat::getnum (){return num;};
+QString Candidat::getnom (){return nom;}
+QString Candidat::getprenom (){return prenom;};
+QString Candidat::getadresse (){return adresse;};
+QString Candidat::getdiplome (){return diplome;};
+void Candidat::setCIN(int CIN){this->CIN=CIN;}
+ void Candidat::setnum(int num){this->num=num;}
+   void Candidat::setnom(QString nom){this->nom=nom;}
+    void Candidat::setprenom(QString prenom){this->prenom=prenom;}
+      void Candidat::setadresse(QString adresse){this->adresse=adresse;}
+        void Candidat::setdiplome(QString diplome){this->diplome=diplome;}
+        
+      
