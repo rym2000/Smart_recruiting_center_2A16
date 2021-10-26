@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1259</width>
+    <height>695</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#mainpage{
+border-image: url(:/new/prefix1/resources/back.jpg);
+
+}
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>90</y>
+      <width>911</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:  #2471a3 ;
+border-radius:15px;
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QTableView" name="tableView">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>140</y>
+       <width>541</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:white;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>160</y>
+       <width>251</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+border-width: 1px; border-radius: 4px;
+font-size: 18px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+	padding: 0 8px;
+	color:  #000000 ;
+	background: #d4e6f1 ;
+	selection-background-color:#007b50;
+	selection-color: #FFFFFF
+;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string>CODE</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_2">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>190</y>
+       <width>251</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+border-width: 1px; border-radius: 4px;
+font-size: 18px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+	padding: 0 8px;
+	color:  #000000 ;
+	background: #d4e6f1 ;
+	selection-background-color:#007b50;
+	selection-color: #FFFFFF
+;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string>NOTE_CL</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_3">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>220</y>
+       <width>251</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+border-width: 1px; border-radius: 4px;
+font-size: 18px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+	padding: 0 8px;
+	color:  #000000 ;
+	background: #d4e6f1 ;
+	selection-background-color:#007b50;
+	selection-color: #FFFFFF
+;</string>
+     </property>
+     <property name="placeholderText">
+      <string>NOTE_CN</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_4">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>250</y>
+       <width>251</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+border-width: 1px; border-radius: 4px;
+font-size: 18px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+	padding: 0 8px;
+	color:  #000000 ;
+	background: #d4e6f1 ;
+	selection-background-color:#007b50;
+	selection-color: #FFFFFF
+;
+
+</string>
+     </property>
+     <property name="placeholderText">
+      <string>NOTE_MOTIVATION</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>280</y>
+       <width>251</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+border-width: 1px; border-radius: 4px;
+font-size: 18px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+	padding: 0 8px;
+	color:  #000000 ;
+	background: #d4e6f1 ;
+	selection-background-color:#007b50;
+	selection-color: #FFFFFF
+;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>TYPE</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>60</y>
+       <width>511</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-family: century gothic;
+font-size: 30px;
+color: #a9b7c6;
+text-align: center;</string>
+     </property>
+     <property name="text">
+      <string>gestion des evaluations</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>330</y>
+       <width>251</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#pushButton{
+
+background-color: black;
+border-radius: 4px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+font-family: century gothic;
+font-size: 18px;
+color: #a9b7c6;
+}
+#pushButton:hover{
+border-style: solid;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-bottom-color: #e67e22;
+	border-bottom-width: 1px;
+	border-bottom-radius: 6px;
+	border-style: solid;
+	color: #FFFFFF;
+	padding-bottom: 2px;
+	background-color: green;
+}</string>
+     </property>
+     <property name="text">
+      <string>ajouter</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>370</y>
+       <width>201</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#pushButton_2{
+
+background-color: black;
+border-radius: 4px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+font-family: century gothic;
+font-size: 18px;
+color: #a9b7c6;
+}
+#pushButton_2:hover{
+border-style: solid;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-bottom-color: #e67e22;
+	border-bottom-width: 1px;
+	border-bottom-radius: 6px;
+	border-style: solid;
+	color: #FFFFFF;
+	padding-bottom: 2px;
+	background-color: green;
+}</string>
+     </property>
+     <property name="text">
+      <string>afficher</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>110</y>
+       <width>141</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#pushButton_3{
+
+background-color: black;
+border-radius: 4px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+font-family: century gothic;
+font-size: 18px;
+color: #a9b7c6;
+}
+#pushButton_3:hover{
+border-style: solid;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-bottom-color: #e67e22;
+	border-bottom-width: 1px;
+	border-bottom-radius: 6px;
+	border-style: solid;
+	color: #FFFFFF;
+	padding-bottom: 2px;
+	background-color: green;
+}</string>
+     </property>
+     <property name="text">
+      <string>chercher</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_4">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>370</y>
+       <width>201</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#pushButton_4{
+
+background-color: black
+;
+border-radius: 4px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+font-family: century gothic;
+font-size: 18px;
+color: #a9b7c6;
+}
+#pushButton_4:hover{
+border-style: solid;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-bottom-color: #e67e22;
+	border-bottom-width: 1px;
+	border-bottom-radius: 6px;
+	border-style: solid;
+	color: #FFFFFF;
+	padding-bottom: 2px;
+	background-color: green;
+}</string>
+     </property>
+     <property name="text">
+      <string>trier</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_5">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>410</y>
+       <width>201</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#pushButton_5{
+
+background-color: black;
+border-radius: 4px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+font-family: century gothic;
+font-size: 18px;
+color: #a9b7c6;
+}
+#pushButton_5:hover{
+border-style: solid;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-bottom-color: #e67e22;
+	border-bottom-width: 1px;
+	border-bottom-radius: 6px;
+	border-style: solid;
+	color: #FFFFFF;
+	padding-bottom: 2px;
+	background-color: green;
+}</string>
+     </property>
+     <property name="text">
+      <string>generer un PDF</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_5">
+     <property name="geometry">
+      <rect>
+       <x>680</x>
+       <y>110</y>
+       <width>201</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+border-width: 1px; border-radius: 4px;
+font-size: 18px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+	padding: 0 8px;
+	color:  #000000 ;
+	background: #d4e6f1 ;
+	selection-background-color:#007b50;
+	selection-color: #FFFFFF
+;</string>
+     </property>
+     <property name="placeholderText">
+      <string>ENTER LE CODE</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_6">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>110</y>
+       <width>151</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#pushButton_6{
+
+background-color: black;
+border-radius: 4px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+font-family: century gothic;
+font-size: 18px;
+color: #a9b7c6;
+}
+#pushButton_6:hover{
+border-style: solid;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-bottom-color: #e67e22;
+	border-bottom-width: 1px;
+	border-bottom-radius: 6px;
+	border-style: solid;
+	color: #FFFFFF;
+	padding-bottom: 2px;
+	background-color: green;
+}</string>
+     </property>
+     <property name="text">
+      <string>supprimer</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_7">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>370</y>
+       <width>251</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#pushButton_7{
+
+background-color: black;
+border-radius: 4px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+font-family: century gothic;
+font-size: 18px;
+color: #a9b7c6;
+}
+#pushButton_7:hover{
+border-style: solid;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-bottom-color: #e67e22;
+	border-bottom-width: 1px;
+	border-bottom-radius: 6px;
+	border-style: solid;
+	color: #FFFFFF;
+	padding-bottom: 2px;
+	background-color: green;
+}</string>
+     </property>
+     <property name="text">
+      <string>modifer</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_8">
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>410</y>
+       <width>201</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#pushButton_8{
+
+background-color: black;
+border-radius: 4px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+font-family: century gothic;
+font-size: 18px;
+color: #a9b7c6;
+}
+#pushButton_8:hover{
+border-style: solid;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-bottom-color: #e67e22;
+	border-bottom-width: 1px;
+	border-bottom-radius: 6px;
+	border-style: solid;
+	color: #FFFFFF;
+	padding-bottom: 2px;
+	background-color: green;
+}</string>
+     </property>
+     <property name="text">
+      <string>Calculer moyene</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButton_9">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>10</y>
+      <width>141</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 60px;
+
+background-color: transparent;
+border-image: url(:/new/prefix1/res/pict.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1259</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
