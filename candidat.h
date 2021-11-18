@@ -2,28 +2,37 @@
 #define CANDIDAT_H
 
 #include <QString>
+#include <QSqlQueryModel>
+
+
 
 class Candidat
 {
-public:
-    Candidat();
-    Candidat(int,int,QString,QString,QString,QString);
-    int getCIN ();
-    int getnum ();
-    QString getnom ();
-    QString getprenom ();
-    QString getadresse ();
-    QString getdiplome ();
-    void setCIN(int);
-     void setnum(int);
-       void setnom(QString);
-        void setprenom(QString);
-          void setadresse(QString);
-            void setdiplome(QString);
 
-    private:
-    int CIN , num ;
-    QString nom,prenom,adresse,diplome ;
+public:
+    int CIN  ;
+    QString nom,prenom,date,diplome ;
+
+public:
+            Candidat();
+            Candidat(int,QString,QString,QString,QString);
+
+            int getCIN ();
+            QString getnom ();
+            QString getprenom ();
+            QString getdate ();
+            QString getdiplome ();
+
+            bool ajouter();
+            bool supprimer(int);
+            QSqlQueryModel* afficher();
+            bool modifier(int,QString,QString,QString,QString) ;
+            QSqlQueryModel* rechercherdynamique(QString input,QString filter);
+            QSqlQueryModel* afficher_unemploye();
+            QSqlQueryModel* afficher_unemploye_nom();
+            QSqlQueryModel* afficher_unemploye_nom_prenom();
+
+
 };
 
 #endif // CANDIDAT_H

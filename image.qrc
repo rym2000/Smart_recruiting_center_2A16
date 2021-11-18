@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>fond maquette 19.png</file>
+    </qresource>
+</RCC>
