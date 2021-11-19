@@ -1,14 +1,35 @@
-QT       += core gui sql
+QT       += core gui network sql
+
+
+
+
+#-------------------------------------------------
+#
+# Project created by QtCreator 2011-08-11T20:59:25
+#
+#-------------------------------------------------
+
+
+
+# Build as an application
+#TEMPLATE = app
+
+# Build as a library
+
+
+
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 CONFIG += c++11
+QT       += core gui printsupport
 
 # The following define makes your compiler emit warnings if you use
 # any Qt feature that has been marked deprecated (the exact warnings
 # depend on your compiler). Please consult the documentation of the
 # deprecated API in order to know how to port your code away from it.
 DEFINES += QT_DEPRECATED_WARNINGS
+
 
 # You can also make your code fail to compile if it uses deprecated APIs.
 # In order to do so, uncomment the following line.
@@ -17,14 +38,33 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     connection.cpp \
+    delegate.cpp \
     evaluation.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+
+
+
 
 HEADERS += \
     coonection.h \
+    delegate.h \
     evaluation.h \
-    mainwindow.h
+    mainwindow.h \
+    mimeattachment.h \
+    mimefile.h \
+    mimehtml.h \
+    mimeinlinefile.h \
+    mimemessage.h \
+    mimepart.h \
+    mimetext.h \
+    smtpclient.h \
+    SmtpMime \
+    quotedprintable.h \
+    mimemultipart.h \
+    mimecontentformatter.h \
+    smtpexports.h
+
 
 FORMS += \
     mainwindow.ui
@@ -36,5 +76,4 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     res.qrc \
-    res.qrc \
-    res.qrc \
+

@@ -2,6 +2,9 @@
 #define EVALUATION_H
 #include <QString>
 #include <QSqlQueryModel>
+#include <QStandardItemModel>
+#include <QPdfWriter>
+#include <QPainter>
 class Evaluation
 {
 public:
@@ -16,9 +19,18 @@ public:
     int getNoteCn();
     int getNoteM();
     bool ajouter();
-    QSqlQueryModel * afficher();
+    //QSqlQueryMod
     bool supprimer(int);
     bool modifier(int);
+    QStandardItemModel* afficher(QObject* parent);
+    QSqlQueryModel * afficherCode();
+    QStandardItemModel * recherche(const QString &arg1,QObject *parent);
+    QStandardItemModel* trier(QObject* parent,int in);
+    void telechargerPDF();
+
+
+
+
 
 };
 
