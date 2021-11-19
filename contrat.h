@@ -6,12 +6,13 @@ class contrat
 {
 public:
     contrat();
-    contrat(int,QString,QString,float,QString,int,int);
+    contrat(int,QString,QString,float,QString);
     bool ajouter();
     bool supprimer(int);
     bool modifier(int);
     QSqlQueryModel* afficher();
     QSqlQueryModel* trier(QString);
+    bool rechercher(int);
 private:
     int id;
     QString nom;

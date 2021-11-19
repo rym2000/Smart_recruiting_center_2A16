@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui sql
+QT       += core gui sql multimedia network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -28,12 +28,14 @@ SOURCES += \
     contrat.cpp \
         main.cpp \
         mainwindow.cpp \
-    connection.cpp
+    connection.cpp \
+    smtp.cpp
 
 HEADERS += \
     contrat.h \
         mainwindow.h \
-    connection.h
+    connection.h \
+    smtp.h
 
 FORMS += \
         mainwindow.ui
@@ -42,3 +44,6 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+DISTFILES += \
+    ../bg bleu.png
