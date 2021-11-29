@@ -20,10 +20,10 @@
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>710</x>
+      <x>720</x>
       <y>90</y>
       <width>581</width>
-      <height>371</height>
+      <height>361</height>
      </rect>
     </property>
     <property name="title">
@@ -33,9 +33,9 @@
      <property name="geometry">
       <rect>
        <x>90</x>
-       <y>60</y>
+       <y>70</y>
        <width>381</width>
-       <height>81</height>
+       <height>71</height>
       </rect>
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout">
@@ -54,7 +54,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="nomnutilisateur">
+       <widget class="QLineEdit" name="lineEditnomnutilisateur">
         <property name="styleSheet">
          <string notr="true">background:transparent;
     border:none;
@@ -72,7 +72,7 @@
        <x>90</x>
        <y>170</y>
        <width>381</width>
-       <height>101</height>
+       <height>81</height>
       </rect>
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -84,7 +84,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="motdepasse">
+       <widget class="QLineEdit" name="lineEdit_motdepasse">
         <property name="styleSheet">
          <string notr="true">background:transparent;
     border:none;
@@ -99,7 +99,7 @@
       </item>
      </layout>
     </widget>
-    <widget class="QPushButton" name="login">
+    <widget class="QPushButton" name="identifier">
      <property name="geometry">
       <rect>
        <x>350</x>
@@ -119,6 +119,32 @@
       <string>Identifier</string>
      </property>
     </widget>
+    <widget class="QWidget" name="widget_2" native="true">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>71</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/f/username.png);</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widget_3" native="true">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>180</y>
+       <width>71</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/f/motdepasse.png);</string>
+     </property>
+    </widget>
    </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
@@ -130,7 +156,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; font-style:italic; color:#a564a4;&quot;&gt;JOB-BERRY&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;Smart&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -142,14 +168,14 @@
    <widget class="QWidget" name="widget" native="true">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>10</y>
+      <x>20</x>
+      <y>20</y>
       <width>91</width>
       <height>61</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/new/prefix1/fond maquette 19.png);
+     <string notr="true">border-image: url(:/f/wedding-planner-grenoble.jpg);
 </string>
     </property>
    </widget>

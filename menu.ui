@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>menu</class>
+ <widget class="QDialog" name="menu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1033</width>
+    <height>747</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>90</y>
+     <width>751</width>
+     <height>551</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/new/prefix1/fond maquette 19.png);</string>
+   </property>
+   <widget class="QPushButton" name="gestioninscription">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>80</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#gestioninscription{
+
+background-color: black;
+border-radius: 4px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+font-family: century gothic;
+font-size: 18px;
+color: #a9b7c6;
+}
+#gestioninscription:hover{
+border-style: solid;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-bottom-color: #e67e22;
+	border-bottom-width: 1px;
+	border-bottom-radius: 6px;
+	border-style: solid;
+	color: #FFFFFF;
+	padding-bottom: 2px;
+	background-color: green;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Gestion Inscription</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="gestioninscription_2">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>141</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#gestioninscription_2{
+
+background-color: black;
+border-radius: 4px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+font-family: century gothic;
+font-size: 18px;
+color: #a9b7c6;
+}
+#gestioninscription_2:hover{
+border-style: solid;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-bottom-color: #e67e22;
+	border-bottom-width: 1px;
+	border-bottom-radius: 6px;
+	border-style: solid;
+	color: #FFFFFF;
+	padding-bottom: 2px;
+	background-color: green;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Gestion Rendez-Vous</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="gestioninscription_3">
+    <property name="geometry">
+     <rect>
+      <x>235</x>
+      <y>260</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#gestioninscription_3{
+
+background-color: black;
+border-radius: 4px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+font-family: century gothic;
+font-size: 18px;
+color: #a9b7c6;
+}
+#gestioninscription_3:hover{
+border-style: solid;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-bottom-color: #e67e22;
+	border-bottom-width: 1px;
+	border-bottom-radius: 6px;
+	border-style: solid;
+	color: #FFFFFF;
+	padding-bottom: 2px;
+	background-color: green;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Gestion Entretien</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="gestioninscription_4">
+    <property name="geometry">
+     <rect>
+      <x>235</x>
+      <y>331</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#gestioninscription_4{
+
+background-color: black;
+border-radius: 4px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+font-family: century gothic;
+font-size: 18px;
+color: #a9b7c6;
+}
+#gestioninscription_4:hover{
+border-style: solid;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-bottom-color: #e67e22;
+	border-bottom-width: 1px;
+	border-bottom-radius: 6px;
+	border-style: solid;
+	color: #FFFFFF;
+	padding-bottom: 2px;
+	background-color: green;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Gestion Employés</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="gestioninscription_5">
+    <property name="geometry">
+     <rect>
+      <x>235</x>
+      <y>391</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#gestioninscription_5{
+
+background-color: black;
+border-radius: 4px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+font-family: century gothic;
+font-size: 18px;
+color: #a9b7c6;
+}
+#gestioninscription_5:hover{
+border-style: solid;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-bottom-color: #e67e22;
+	border-bottom-width: 1px;
+	border-bottom-radius: 6px;
+	border-style: solid;
+	color: #FFFFFF;
+	padding-bottom: 2px;
+	background-color: green;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Gestion Entreprise</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="gestioninscription_6">
+    <property name="geometry">
+     <rect>
+      <x>235</x>
+      <y>201</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#gestioninscription_6{
+
+background-color: black;
+border-radius: 4px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+font-family: century gothic;
+font-size: 18px;
+color: #a9b7c6;
+}
+#gestioninscription_6:hover{
+border-style: solid;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-bottom-color: #e67e22;
+	border-bottom-width: 1px;
+	border-bottom-radius: 6px;
+	border-style: solid;
+	color: #FFFFFF;
+	padding-bottom: 2px;
+	background-color: green;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Gestion Contrat</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -23,6 +23,7 @@ SOURCES += \
     gestioninscription.cpp \
     main.cpp \
     mainwindow.cpp \
+    menu.cpp \
     qcustomplot.cpp \
     widget.cpp
 
@@ -32,6 +33,7 @@ HEADERS += \
     connection.h \
     gestioninscription.h \
     mainwindow.h \
+    menu.h \
     qcustomplot.h \
     widget.h
 
@@ -39,6 +41,7 @@ FORMS += \
     DuMesengerConnectionDialog.ui \
     gestioninscription.ui \
     mainwindow.ui \
+    menu.ui \
     widget.ui
 
 # Default rules for deployment.

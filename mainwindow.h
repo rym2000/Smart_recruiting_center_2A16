@@ -1,8 +1,12 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
- #include "candidat.h"
+
 #include <QMainWindow>
-#include "gestioninscription.h"
+#include "menu.h"
+#include <QPropertyAnimation>
+#include <QMediaPlayer>
+#include <QtDebug>
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -17,13 +21,11 @@ public:
 
 private slots:
 
-
-
-    void on_gestioninscription_clicked();
+    void on_login_clicked();
 
 private:
     Ui::MainWindow *ui;
-    gestioninscription *ginscrition;
-
+    menu *Menu;
+    QPropertyAnimation *animation,*animationimg;
 };
 #endif // MAINWINDOW_H

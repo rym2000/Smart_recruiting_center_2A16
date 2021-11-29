@@ -1,4 +1,5 @@
 #include "mainwindow.h"
+
 #include "connection.h"
 #include <QApplication>
 #include <QMessageBox>
@@ -8,6 +9,7 @@ int main(int argc, char *argv[])
     MainWindow w;
 
     Connection c;
+    w.show();
     bool test=c.createconnect();
     if(test)
     {w.show();
