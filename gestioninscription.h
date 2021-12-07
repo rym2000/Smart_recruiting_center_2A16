@@ -1,7 +1,7 @@
 #ifndef GESTIONINSCRIPTION_H
 #define GESTIONINSCRIPTION_H
 #include "candidat.h"
-
+#include "arduino.h"
 #include <QDialog>
 #include <QMediaPlayer>
 #include"QDate"
@@ -42,13 +42,19 @@ private slots:
     void on_verticalSlidersong_actionTriggered(int action);
     void showTime();
     void on_comboBox_trier_activated(const QString &arg1);
+    void updatelabel();
 
 
 
+    void on_pushButton_clicked();
+
+    void on_pushButton_3_clicked();
 
 private:
     Ui::gestioninscription *ui;
     Candidat c ;
+    Arduino A;
+    QByteArray data;
 
     QMediaPlayer        *reproductor;
 

@@ -1,5 +1,6 @@
 QT += sql
-QT       += core gui multimedia network multimediawidgets printsupport
+QT       += core gui multimedia network multimediawidgets printsupport serialport
+QT += core gui sql core network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -18,27 +19,43 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     DuMesengerConnectionDialog.cpp \
+    Exel.cpp \
+    arduino.cpp \
     candidat.cpp \
     connection.cpp \
+    entreprise.cpp \
+    entreprises.cpp \
+    entretien.cpp \
+    entretienn.cpp \
     gestioninscription.cpp \
     main.cpp \
     mainwindow.cpp \
     menu.cpp \
     qcustomplot.cpp \
+    smtp.cpp \
     widget.cpp
 
 HEADERS += \
     DuMesengerConnectionDialog.h \
+    Exel.h \
+    arduino.h \
     candidat.h \
     connection.h \
+    entreprise.h \
+    entreprises.h \
+    entretien.h \
+    entretienn.h \
     gestioninscription.h \
     mainwindow.h \
     menu.h \
     qcustomplot.h \
+    smtp.h \
     widget.h
 
 FORMS += \
     DuMesengerConnectionDialog.ui \
+    entreprises.ui \
+    entretienn.ui \
     gestioninscription.ui \
     mainwindow.ui \
     menu.ui \

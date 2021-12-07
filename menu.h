@@ -3,6 +3,8 @@
 
 #include <QDialog>
 #include"gestioninscription.h"
+#include "entreprises.h"
+#include "entretienn.h"
 
 namespace Ui {
 class menu;
@@ -19,9 +21,15 @@ public:
 private slots:
     void on_gestioninscription_clicked();
 
+    void on_gestioninscription_5_clicked();
+
+    void on_gestioninscription_2_clicked();
+
 private:
     Ui::menu *ui;
     gestioninscription *ginscrition;
+    entreprises *Entreprise;
+    entretienn *entr ;
 
 };
 

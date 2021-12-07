@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>entreprises</class>
+ <widget class="QDialog" name="entreprises">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1061</width>
+    <height>799</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ESPACE ENTREPRISE</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>781</width>
+     <height>571</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>Tab 1</string>
+    </attribute>
+    <widget class="QPushButton" name="pushButton_ajouter">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>350</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#pushButton_ajouter{
+
+background-color: black;
+border-radius: 4px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+font-family: century gothic;
+font-size: 18px;
+color: #a9b7c6;
+}
+#pushButton_ajouter:hover{
+border-style: solid;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-bottom-color: #e67e22;
+	border-bottom-width: 1px;
+	border-bottom-radius: 6px;
+	border-style: solid;
+	color: #FFFFFF;
+	padding-bottom: 2px;
+	background-color: green;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>ajouter</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>130</y>
+       <width>56</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="id">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>130</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-width: 1px; border-radius: 4px;
+font-size: 18px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+	padding: 0 8px;
+	color:  #000000 ;
+	background: #d4e6f1 ;
+	selection-background-color:#007b50;
+	selection-color: #FFFFFF</string>
+     </property>
+     <property name="text">
+      <string>ID</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="le_nom">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>170</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-width: 1px; border-radius: 4px;
+font-size: 18px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+	padding: 0 8px;
+	color:  #000000 ;
+	background: #d4e6f1 ;
+	selection-background-color:#007b50;
+	selection-color: #FFFFFF</string>
+     </property>
+     <property name="text">
+      <string>NOM</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="le_offre">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>210</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-width: 1px; border-radius: 4px;
+font-size: 18px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+	padding: 0 8px;
+	color:  #000000 ;
+	background: #d4e6f1 ;
+	selection-background-color:#007b50;
+	selection-color: #FFFFFF</string>
+     </property>
+     <property name="text">
+      <string>OFFRE</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="le_delai">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>250</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-width: 1px; border-radius: 4px;
+font-size: 18px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+	padding: 0 8px;
+	color:  #000000 ;
+	background: #d4e6f1 ;
+	selection-background-color:#007b50;
+	selection-color: #FFFFFF</string>
+     </property>
+     <property name="text">
+      <string>DELAI</string>
+     </property>
+    </widget>
+    <widget class="QTableView" name="tab_entreprises">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>130</y>
+       <width>451</width>
+       <height>231</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_supprimer">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>170</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#pushButton_supprimer{
+
+background-color: black;
+border-radius: 4px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+font-family: century gothic;
+font-size: 18px;
+color: #a9b7c6;
+}
+#pushButton_supprimer:hover{
+border-style: solid;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-bottom-color: #e67e22;
+	border-bottom-width: 1px;
+	border-bottom-radius: 6px;
+	border-style: solid;
+	color: #FFFFFF;
+	padding-bottom: 2px;
+	background-color: green;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>supprimer</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_modifier">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>230</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#pushButton_modifier{
+
+background-color: black;
+border-radius: 4px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+font-family: century gothic;
+font-size: 18px;
+color: #a9b7c6;
+}
+#pushButton_modifier:hover{
+border-style: solid;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-bottom-color: #e67e22;
+	border-bottom-width: 1px;
+	border-bottom-radius: 6px;
+	border-style: solid;
+	color: #FFFFFF;
+	padding-bottom: 2px;
+	background-color: green;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>modifier</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_trier">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>100</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#pushButton_trier{
+
+background-color: black;
+border-radius: 4px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+font-family: century gothic;
+font-size: 18px;
+color: #a9b7c6;
+}
+#pushButton_trier:hover{
+border-style: solid;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-bottom-color: #e67e22;
+	border-bottom-width: 1px;
+	border-bottom-radius: 6px;
+	border-style: solid;
+	color: #FFFFFF;
+	padding-bottom: 2px;
+	background-color: green;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>trier</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="rech">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>360</y>
+       <width>231</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-width: 1px; border-radius: 4px;
+font-size: 18px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+	padding: 0 8px;
+	color:  #000000 ;
+	background: #d4e6f1 ;
+	selection-background-color:#007b50;
+	selection-color: #FFFFFF</string>
+     </property>
+     <property name="text">
+      <string>RECHERCHE ENTREPRISE</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>290</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-width: 1px; border-radius: 4px;
+font-size: 18px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+	padding: 0 8px;
+	color:  #000000 ;
+	background: #d4e6f1 ;
+	selection-background-color:#007b50;
+	selection-color: #FFFFFF</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>ID- EXISTE</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QPushButton" name="pushButton_trier1">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>100</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#pushButton_trier1{
+
+background-color: black;
+border-radius: 4px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+font-family: century gothic;
+font-size: 18px;
+color: #a9b7c6;
+}
+#pushButton_trier1:hover{
+border-style: solid;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-bottom-color: #e67e22;
+	border-bottom-width: 1px;
+	border-bottom-radius: 6px;
+	border-style: solid;
+	color: #FFFFFF;
+	padding-bottom: 2px;
+	background-color: green;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>trier </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_trier2">
+     <property name="geometry">
+      <rect>
+       <x>600</x>
+       <y>100</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#pushButton_trier2{
+
+background-color: black;
+border-radius: 4px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+font-family: century gothic;
+font-size: 18px;
+color: #a9b7c6;
+}
+#pushButton_trier2:hover{
+border-style: solid;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-bottom-color: #e67e22;
+	border-bottom-width: 1px;
+	border-bottom-radius: 6px;
+	border-style: solid;
+	color: #FFFFFF;
+	padding-bottom: 2px;
+	background-color: green;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>trier</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="mail">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>290</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-width: 1px; border-radius: 4px;
+font-size: 18px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+	padding: 0 8px;
+	color:  #000000 ;
+	background: #d4e6f1 ;
+	selection-background-color:#007b50;
+	selection-color: #FFFFFF
+</string>
+     </property>
+     <property name="text">
+      <string>E-MAIL</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="exporterExel">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>360</y>
+       <width>151</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#exporterExel{
+
+background-color: black;
+border-radius: 4px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+font-family: century gothic;
+font-size: 18px;
+color: #a9b7c6;
+}
+#exporterExel:hover{
+border-style: solid;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-bottom-color: #e67e22;
+	border-bottom-width: 1px;
+	border-bottom-radius: 6px;
+	border-style: solid;
+	color: #FFFFFF;
+	padding-bottom: 2px;
+	background-color: green;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>ExporteExel</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>Tab 2</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>801</width>
+       <height>531</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Envoie email</string>
+     </property>
+     <widget class="QGroupBox" name="groupBox_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>551</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>liste</string>
+      </property>
+      <widget class="QTableView" name="tableView_email">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>531</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_from_email">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>180</y>
+        <width>331</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="placeholderText">
+       <string>from</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_psswrd_email">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>180</y>
+        <width>241</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="placeholderText">
+       <string>password</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_to_email">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>210</y>
+        <width>591</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="placeholderText">
+       <string>to</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_atchmnt_email">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>240</y>
+        <width>491</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="placeholderText">
+       <string>attachment</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_subject_email">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>270</y>
+        <width>491</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="placeholderText">
+       <string>subject</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="textEdit_email">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>300</y>
+        <width>771</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_browse_email">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>240</y>
+        <width>111</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_browse_email{
+
+background-color: black;
+border-radius: 4px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+font-family: century gothic;
+font-size: 18px;
+color: #a9b7c6;
+}
+#pushButton_browse_email:hover{
+border-style: solid;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-bottom-color: #e67e22;
+	border-bottom-width: 1px;
+	border-bottom-radius: 6px;
+	border-style: solid;
+	color: #FFFFFF;
+	padding-bottom: 2px;
+	background-color: green;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Browse...</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_send_email">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>270</y>
+        <width>111</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_send_email{
+
+background-color: black;
+border-radius: 4px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+font-family: century gothic;
+font-size: 18px;
+color: #a9b7c6;
+}
+#pushButton_send_email:hover{
+border-style: solid;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-bottom-color: #e67e22;
+	border-bottom-width: 1px;
+	border-bottom-radius: 6px;
+	border-style: solid;
+	color: #FFFFFF;
+	padding-bottom: 2px;
+	background-color: green;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>send</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

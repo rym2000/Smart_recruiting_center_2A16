@@ -84,6 +84,21 @@ gestioninscription::gestioninscription(QWidget *parent) :
        connect(ui->pushButton_playsong, &QPushButton::clicked, reproductor, &QMediaPlayer::play);
        connect(ui->pushButton_pausesong, &QPushButton::clicked, reproductor, &QMediaPlayer::pause);
        connect(ui->pushButton_stopsong, &QPushButton::clicked, reproductor, &QMediaPlayer::stop);
+
+       //arduino
+       int ret =A.connect_arduino();//lancer la connection to arduino
+       switch (ret) {
+
+       case(0):qDebug()<<"arduino is available and connect to : "<<A.getarduino_port_name();
+           break;
+       case(1):qDebug()<<"arduino is available and not  connect to : "<<A.getarduino_port_name();
+           break;
+       case(-1):qDebug()<<"arduino is not available ";
+           break;
+
+       }
+       QObject::connect(A.getserial(),SIGNAL(readyRead()),this,SLOT(updatelabel()));
+
 }
 
 gestioninscription::~gestioninscription()
@@ -91,6 +106,23 @@ gestioninscription::~gestioninscription()
     delete ui;
 }
 
+
+void gestioninscription::updatelabel()
+{
+
+    data=A.read_from_arduino();//recuperer les donnes from arduino
+
+    ui->label_7->setText("Aucune détection");
+
+     if (data=="2")
+
+
+        ui->label_7->setText("la poucentage de gaz dans la salle est faible s'il vous palit déactiver le sonor pour fermer les fenetres.");
+
+    else if(data=="3")
+
+           ui->label_7->setText("Attention !!!! la poucentage de gaz dans la salle est elevé s'il vous palit activer le sonor pour ouvrir les fenetres.");
+}
 void gestioninscription::on_pushButton_10_clicked()
 {
     int CIN = ui->lineEdit->text().toInt();
@@ -419,5 +451,17 @@ void gestioninscription::on_comboBox_trier_activated(const QString &arg1)
     ui->tableView->setModel(modal);
     ui->tableView->show();
    }
+
+}
+
+void gestioninscription::on_pushButton_clicked()
+{
+    A.write_to_arduino("1");//activer le buzzer envoyer 1 à arduino
+
+}
+
+void gestioninscription::on_pushButton_3_clicked()
+{
+    A.write_to_arduino("0");//déactiver le buzzer envoyer 0 à arduino
 
 }

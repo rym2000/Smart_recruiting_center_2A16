@@ -18,3 +18,16 @@ void menu::on_gestioninscription_clicked()
     ginscrition = new gestioninscription(this);
     ginscrition->show();
 }
+
+void menu::on_gestioninscription_5_clicked()
+{
+    Entreprise =new entreprises(this);
+
+    Entreprise->show();
+}
+
+void menu::on_gestioninscription_2_clicked()
+{
+ entr = new entretienn(this);
+ entr->show();
+}
